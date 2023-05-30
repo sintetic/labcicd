@@ -18,6 +18,13 @@ pipeline {
         }
       }
     }
-
+    stage("mysql test") {
+      steps {
+         script {
+           echo "Start of the MySQL test"
+           sh "nc 127.0.0.1:3306"
+        }
+      }
+    }
   }
 }
