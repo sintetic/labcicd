@@ -22,13 +22,7 @@ pipeline {
       steps {
          script {
            echo "Start of the MySQL test"
-           sh "sudo passwd root"
-           sh "1"
-           sh "1"
-           sh "su"
-           sh "1"
-           sh "apt install telnet"
-           sh "telnet 127.0.0.1 3306"
+           sh 'cat 1.txt'
         }
       }
     }
