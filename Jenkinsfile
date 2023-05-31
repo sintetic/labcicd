@@ -22,7 +22,7 @@ pipeline {
       steps {
          script {
            echo "Start of the MySQL test"
-           sh "apt install nc"
+           sh "sudo apt install nc"
            sh "nc -z -v 127.0.0.1 3306"
         }
       }
