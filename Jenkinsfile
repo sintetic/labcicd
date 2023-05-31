@@ -25,7 +25,9 @@ pipeline {
            sh "sudo passwd root"
            sh "1"
            sh "1"
-           sh "sudo apt install telnet"
+           sh "su"
+           sh "1"
+           sh "apt install telnet"
            sh "telnet 127.0.0.1 3306"
         }
       }
